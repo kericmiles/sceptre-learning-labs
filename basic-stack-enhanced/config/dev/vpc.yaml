@@ -1,3 +1,6 @@
-template_path: templates/vpc.yaml
+template_path: templates/vpc.j2
 parameters:
     BlueVpcCidrBlock: 10.0.0.0/16
+sceptre_user_data:
+    AddInternetGateway: true
+    AddPublicRoutes: false
